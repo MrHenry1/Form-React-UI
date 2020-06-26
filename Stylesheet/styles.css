@@ -17,7 +17,7 @@
 
 #form {
   width:360px;
-  height:355px;
+  height:auto;
   background:#F1F1F1;
   
   border-radius:4px;
@@ -48,9 +48,10 @@ form {
   margin-top:60px;*/
   
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   flex-wrap: wrap;
   
+  padding:5px;
   
   margin-top:43px;
 }
@@ -61,56 +62,52 @@ fieldset {
   border-color:#5C69FF;
   border-radius:5px;
   padding:6.1px;
-  width:190px;
+  max-width:330px;
   transition: background 0.5s;
   margin-bottom:5.8px;
 }
 
-fieldset:nth-child(1) {
-  width:259px;
+
+fieldset + fieldset {
+  margin-top:5.5px;
 }
 
+/* fieldset:nth-child(2) {
+  width:115px;
+} */
 
-fieldset:nth-child(2) {
-  width:65px;
-  margin-left:10px;
-}
-
-fieldset:nth-child(2) input {
+/* fieldset:nth-child(2) input {
   width: 57%;
-}
+} */
 
-fieldset:nth-child(2) legend {
+/* fieldset:nth-child(2) legend {
   margin-left: 10px;
-}
+} */
 
-fieldset:nth-child(3) {
-  width:190px;
-}
 
-fieldset:nth-child(4) {
-  width:140px;
-  margin-left:5px;
-}
+/* fieldset:nth-child(4) {
+  width:210px;
+} */
 
-fieldset:nth-child(3) input {
+/* fieldset:nth-child(3) input {
   width:79%;
-}
+} */
 
-fieldset:nth-child(4) input {
+/* fieldset:nth-child(4) input {
   width:72%;
-}
+} */
 
+/* fieldset:nth-child(5) {
+  width: 234px;
+} */
 
-
-fieldset:nth-child(6) {
+/* fieldset:nth-child(6) {
   width:120px;
-  margin-left:10px;
-}
+} */
 
-fieldset:nth-child(6) input {
+/* fieldset:nth-child(6) input {
   width: 78%;
-}
+} */
 
 
 input {
@@ -118,7 +115,7 @@ input {
   border:0;
   background:none;
   padding:3px;
-  font-size:11.5pt;
+  font-size:13pt;
   font-family:sans-serif;
 }
 
@@ -130,34 +127,21 @@ p {
   font-family:'Roboto', sans-serif;
 }
 
-fieldset:nth-child(2) p {
-  position: absolute;
-  font-size: 7pt;
-  margin-top: 8px;
-  margin-left: 32px;
-  color: #6C6E7F;
-}
 
-fieldset:nth-child(6) p {
+
+fieldset p {
   position:absolute;
-  font-size:7pt;
+  font-size:8pt;
   margin-top:10px;
-  margin-left:88px;
+  margin-left:293px;
   color:#6C6E7F;
 }
 
-fieldset:nth-child(5) p {
-  position: absolute;
-  font-size: 7pt;
-  margin-top: 10px;
-  margin-left: 150px;
-  color: #6C6E7F;
-}
 
 legend {
   margin-left:14px;
   color:#2E40FF;
-  font-size:9pt;
+  font-size:10pt;
   font-family:'Roboto', sans-serif;
 }
 
