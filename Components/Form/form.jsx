@@ -51,30 +51,30 @@ function Fields(props) {
             <fieldset>
               <legend>Nome</legend>
               <span><i class="far fa-user"></i></span>
-              <input type="name" required></input>
+              <input type="name" placeholder="E.x: Reginaldo Soares Santos Silva" required></input>
             </fieldset>
             <fieldset>
                <legend>Idade</legend>
                <span><i class="fas fa-baby"></i></span>
-               <input type="number" value={age} maxLength="2" onChange={(e) => handleAgeChange(e)} required></input>
+               <input type="number" placeholder="E.x: 29" value={age} maxLength="2" onChange={(e) => handleAgeChange(e)} required></input>
                <p>{yearcount}/2</p>
             </fieldset>
             <fieldset>
                <legend>Email</legend>
                <span><i class="fas fa-envelope"></i></span>
-               <input type="email" required></input>
+               <input type="email" placeholder="E.x: fulano@gmail.com" required></input>
             </fieldset>
             <fieldset>
                <legend>Senha</legend>
-               <span>{visible === 'text' ? <i onClick={() => setVisible('password')} class="fas fa-lock-open"></i> : <i onClick={() => setVisible('text')} class="fas fa-lock"></i>
+               <span>{visible === 'text' ? <i onClick={() => setVisible('password')} class="fas fa-eye-slash"></i> : <i onClick={() => setVisible('text')} class="fas fa-eye"></i>
                }</span>
-               <input type={visible} required></input>
+               <input type={visible} placeholder="Sua Senha" required></input>
                
             </fieldset>
             <fieldset>
                <legend>Telefone</legend>
                <span><i class="fas fa-phone-square-alt"></i></span>
-               <input type="number" value={phone} maxlength="10" onChange={(e) => handlePhoneChange(e)} required></input>
+               <input type="number" placeholder="E.x: 8389762325" value={phone} maxlength="10" onChange={(e) => handlePhoneChange(e)} required></input>
                <p>{num}/10</p>
             </fieldset>
             <fieldset>
@@ -83,6 +83,7 @@ function Fields(props) {
                <input
                type="name"
                maxlength="2"
+               placeholder="E.x: EU"
                value={pais}
                onChange={(e) => handlePaisChange(e) }
                 required
